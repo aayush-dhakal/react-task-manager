@@ -1,0 +1,87 @@
+.App {
+  height: 100vh; /* so that it takes whole height as a reference to align its child elements in center */
+  display: flex; /* this property is for its child elements */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  color:#c2bec0;
+  font-family: 'Karla', sans-serif;
+}
+
+.task-manager {
+  background: #3b2a32;
+  height: 500px;
+  width: 500px;
+}
+
+.header{
+  text-align: center;
+  margin: 3rem 0;
+  font-family: 'Alata', sans-serif;
+}
+
+.task-form{
+  width: 90%;
+  margin: 0 auto;
+}
+
+input{
+  border-radius: 25px;
+}
+
+.task-form-input input{
+  width: 90%;
+  
+  background: #474747;
+  border:none;
+  color:#c2bec0;
+  padding: 10px;
+}
+
+.task-form-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.task-form-buttons input{
+  width: 110px;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border:none;
+  font-size: 1rem;
+  background: #c26377;
+  color: #fff;
+  transition: transform .4s ease-in-out; /* Animation */
+}
+
+.task-form-buttons input:hover{
+  cursor: pointer;
+  background: #de3c8d;
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+ul{
+  list-style: none;
+}
+
+.tasklist-li{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6rem 0;
+}
+
+.list-icons i{
+  margin: 0 8px;
+  transition: transform .4s ease-in-out;
+}
+
+.list-icons i:hover{
+  cursor: pointer;
+  color: #c26377;
+  transform: scale(1.2);
+}
+
+.empty{
+  text-align: center;
+  margin: 2rem;
+}
