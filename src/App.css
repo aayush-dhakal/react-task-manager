@@ -37,6 +37,10 @@ input{
   padding: 10px;
 }
 
+.task-form-input input:focus {
+  outline: none;
+}
+
 .task-form-buttons{
   display: flex;
   justify-content: center;
